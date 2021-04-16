@@ -26,8 +26,14 @@ func main() {
 		fmt.Printf("%d\n", v)
 	}
 
-	ewei := [2][3] int {
-		(1,2,3),
-		(4,5,6)
+	ewei := [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	for i, v := range ewei {
+		//fmt.Printf("a[%d] =%d\n", i, v)
+		for j, v1 := range v {
+			fmt.Printf("a[%d,%d] =%d\n", i, j, v1)
+		}
 	}
 }
