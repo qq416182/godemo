@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	go spinner(time.Microsecond * 100)
+	go spinner(time.Millisecond * 100)
 	fmt.Println("\n", fib(45))
 }
 
